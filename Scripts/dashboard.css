@@ -56,33 +56,6 @@
   background: rgba(150, 150, 150, 0.205);
   color: rgb(1, 50, 56);
 }
-/* dropbox */
-
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-.dropdown-content {
-  display: none;
-  padding: 15px;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content a {
-  display: block;
-  color: grey;
-  padding: 5px;
-  text-decoration: none;
-}
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
-}
-
 /* content box */
 .dashboard_content_container{
   display: flex;
@@ -257,3 +230,58 @@
   font-size: 12px;
   color: rgb(0, 97, 241);
 }
+
+
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* sidebar */
+  .sidebar {
+    scrollbar-width: none;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 20px;
+  }
+  .sidebar::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 150, 150, 0.514);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  /* list_container_box */
+  .list_container_box {
+    scrollbar-width: none;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  .list_container_box::-webkit-scrollbar {
+    width: 20px;
+  }
+  .list_container_box::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  .list_container_box::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 97, 241);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+  /* appointments_container */
+  .appointments_container {
+    scrollbar-width: none;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  .appointments_container::-webkit-scrollbar {
+    width: 10px;
+  }
+  .appointments_container::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  .appointments_container::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 109, 82);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
