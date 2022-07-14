@@ -1,0 +1,271 @@
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subhead{
+  color: rgb(83, 83, 83);
+}
+
+.container{
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  row-gap: 12px;
+  column-gap: 12px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+/* ======= Sidebar ========= */
+.sidebar{
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 11;
+  background-color: rgba(27, 78, 121, 0.801);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.sidebar div{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+}
+.sidebar div img{
+  width: 50px;
+}
+.sidebar h2{
+  text-align: center;
+  color: honeydew;
+}
+.sidebar a{
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+  padding: 20px;
+}
+
+.sidebar a:hover{
+  background: rgba(146, 145, 145, 0.623);
+  transform: scale(1.1);
+  transition: all 300ms ease;
+}
+
+.sidebar a.active{
+  background: rgba(146, 145, 145, 0.623);
+  transform: scale(1.1);
+}
+
+/* ================ MENU-BOX ============== */
+.menu-container{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  align-items: center;
+}
+.menu-box{
+  background: rgb(235, 228, 228);
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 300ms ease-in-out;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-box:hover{
+  transform: scale(1.1);
+  transition: all 300ms ease-in-out;
+}
+.menu-box img{
+  width: 50px;
+  height: 50px;
+}
+.menu-box .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.menu-box .box .number{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.menu-box .box .text{
+  font-size: 18px;
+  background: rgb(0, 47, 255);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.menu-box .box .text:hover{
+  background: rgba(189, 180, 180, 0.692);
+  transition: all 400ms ease;
+}
+
+/* ======== Upcoming Appointments ========== */
+
+.upcomming-appointment{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.upcomming-appointment div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.upcomming-appointment a{
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 47, 255);
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+.upcomming-appointment a:hover{
+  background: rgba(189, 180, 180, 0.692);
+  transition: all 400ms ease;
+}
+
+/* ======== Appointment List ========= */
+
+.appointment-list{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 9;
+  overflow-y: scroll;
+  border: 2px ridge grey;
+}
+.appointment{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.appointment .profile{
+  border-radius: 50%;
+}
+.appointment div{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 2px;
+}
+.appointment a{
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  border:2px solid rgb(0, 47, 255);
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+.appointment a:hover{
+  background: rgb(0, 47, 255);
+  transition: all 400ms ease;
+}
+/* ==========Doctors List========= */
+ 
+.doctor-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  width: 200px;
+  cursor: pointer;
+}
+.doctor-list img{
+  width: 50px;
+  border-radius: 50%;
+}
+.doctor-list .doctors{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+  border:2px solid rgb(0, 47, 255);
+}
+.doctor-list .doctors:hover{
+  background: rgb(160, 160, 160);
+  transition: all 300ms ease;
+}
+.doctor-list .doctors .text{
+  display: flex;
+  flex-direction: column;
+}
+/* ======== Total Box Detail========= */
+
+.total-detail{
+  grid-row-start: 8;
+  grid-row-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: cadetblue;
+}
+
+.total-patients-box{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 350px;
+}
+.patients-in{
+  grid-row-start: 8;
+  grid-row-end: 10;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: cadetblue;
+}
+.total-patients-in{
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+/* ========= SCROLLBAR ======== */
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #e4e4e4cb;
+  border-radius: 100px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #00afaf;
+  border-radius: 100px;
+}
+
+/* appointment-list */
+
+
+.appointment-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.appointment-list::-webkit-scrollbar-track {
+  background-color: #a3afabcb;
+  border-radius: 100px;
+}
+
+.appointment-list::-webkit-scrollbar-thumb {
+  background-color: #168362;
+  border-radius: 100px;
+}

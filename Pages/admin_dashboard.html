@@ -2,244 +2,239 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="./../Scripts/dashboard.css" />
-  <link rel="stylesheet" href="./../Scripts/responsive.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./../stylesheet/dashboard.css">
 </head>
 
 <body>
-  <div class="dashboard">
-    <div class="sidebar">
-      <!-- Hospital -->
-      <h3 class="logo">CT HOSPITAL</h3>
-      <!-- Admin profile -->
-      <div class="profile">
-        <img src="./../Images/admin.png" alt="profile_pic" class="profile_pic" />
-        <span class="username">Pritesh</span>
+  <div class="container">
+    <div class="items sidebar">
+      <h2>CT HOSPITAL</h2>
+      <div>
+        <img src="./../Images/admin.png" alt="admin">
+        <h3>Pritesh</h3>
       </div>
-      <!-- sidebar -->
-      <a href="#" class="tabs active"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-user"></i> Employee</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-wheelchair"></i> Patient</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-calendar-check"></i> Appointment</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-notes-medical"></i> Reports</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-bed"></i> Ward</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-gear"></i> Setting</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-id-card"></i> Profile</a>
-      <a href="#" class="tabs"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      <a href="#" class="active"><i class="fa-solid fa-house-medical"></i> Dashboard</a>
+      <a href="#"><i class="fa-solid fa-hospital-user"></i> Employee</a>
+      <a href="#"><i class="fa-solid fa-bed-pulse"></i> Patient</a>
+      <a href="#"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+      <a href="#"><i class="fa-solid fa-calendar-check"></i> Appointments</a>
+      <a href="#"><i class="fa-solid fa-bed"></i> Ward</a>
+      <a href="#"><i class="fa-solid fa-notes-medical"></i> Reports</a>
+      <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+      <a href="#"><i class="fa-solid fa-gear"></i> Seting</a>
+      <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
     </div>
-    <!-- dashboard content -->
-    <div class="dashboard_content">
-      <div class="dashboard_content_container">
-        <!-- doctor box -->
-        <div class="menu_box doctor_box_container">
-          <img class="icon" src="./../Images/doctor2.png" alt="#" />
-          <div class="text">
-            <span class="number">3</span>
-            <span class="title">Doctors <i class="fa-solid fa-circle-check"></i></span>
-          </div>
-        </div>
-        <!-- followers box -->
-        <div class="menu_box follower_box">
-          <img class="icon" src="./../Images/follower.png" alt="#" />
-          <div class="text">
-            <span class="number">4000</span>
-            <span class="title">Followers <i class="fa-solid fa-circle-check"></i></span>
-          </div>
-        </div>
-        <!-- posts box -->
-        <div class="menu_box post_box">
-          <img class="icon" src="./../Images/post.png" alt="#" />
-          <div class="text">
-            <span class="number">3</span>
-            <span class="title">Posts <i class="fa-solid fa-circle-check"></i></span>
-          </div>
-        </div>
-        <!-- share box -->
-        <div class="menu_box share_box">
-          <img class="icon" src="./../Images/share.png" alt="#" />
-          <div class="text">
-            <span class="number">300</span>
-            <span class="title">Shares <i class="fa-solid fa-circle-check"></i></span>
-          </div>
+    <div class="menu-container">
+      <div class="items menu-box">
+        <img src="./../Images/doctor2.png" alt="Profile">
+        <div class="box">
+          <span class="number">3</span><br>
+          <span class="text">Doctos <i class="fa-solid fa-circle-check"></i> </span>
         </div>
       </div>
-      <!-- Upcoming Appointments -->
-      <div class="upcoming_appointments">
-        <!-- header -->
-        <div class="appointment_header">
-          <h3 class="heading">Upcoming Appointments</h3>
-          <a href="#" class="view_all">View all <i class="fa-solid fa-angles-right"></i></a>
+      <div class="items menu-box">
+        <img src="./../Images/follower.png" alt="follower">
+        <div class="box">
+          <span class="number">2000</span><br>
+          <span class="text">Followers <i class="fa-solid fa-circle-check"></i> </span>
         </div>
-        <!-- /header -->
       </div>
-      <!-- list container -->
-      <div class="list_container_box">
-        <div class="appointments_container">
-          <!-- appoinment 1 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appoinment 2 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appoinment 3 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appoinment 4 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appoinment 5 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appoinment 6 -->
-          <div class="appointment_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Pritesh Kumar</span>
-              <span class="address down_text">Motihari, Bihar</span>
-            </div>
-            <div class="appointment_with">
-              <span class="title up_text">Appointment With</span>
-              <span class="doctor_name down_text">Dr. Minaul</span>
-            </div>
-            <div class="timing">
-              <span class="title up_text"> Timing</span>
-              <span class="time down_text">12:20</span>
-            </div>
-            <a href="#" class="takeup">Take up</a>
-          </div>
-          <!-- appointment -->
+      <div class="items menu-box">
+        <img src="./../Images/post.png" alt="posts">
+        <div class="box">
+          <span class="number">3</span><br>
+          <span class="text">Posts <i class="fa-solid fa-circle-check"></i> </span>
         </div>
-
-        <div class="doctors_container">
-          <!-- doctor 1 -->
-          <div class="doctor_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Dr. Pritesh</span>
-              <span class="address down_text">Dept001</span>
-            </div>
-          </div>
-          <!-- doctor 2 -->
-          <div class="doctor_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Dr. Arpan</span>
-              <span class="address down_text">Dept002</span>
-            </div>
-          </div>
-          <!-- doctor 3 -->
-          <div class="doctor_box">
-            <img src="./../Images/admin.png" alt="profile">
-            <div class="patient">
-              <span class="name up_text">Dr. Minarul</span>
-              <span class="address down_text">Dept003</span>
-            </div>
-          </div>
-          <!-- /doctor -->
+      </div>
+      <div class="items item menu-box">
+        <img src="./../Images/share.png" alt="Shares">
+        <div class="box">
+          <span class="number">3000</span><br>
+          <span class="text">Shares <i class="fa-solid fa-circle-check"></i> </span>
         </div>
-
-        <!-- total patient -->
-        <div class="total_container">
-          <div class="total_patient_box">
-            <span class="title">Total Patient</span>
-            <span class="title graph"><i class="fa-solid fa-caret-up"></i> 15% Higher then last month</span>
-          </div>
-
-          <div class="total_patient_box">
-            
-            <span class="title">Patient In</span>
-            <div class="patients_in">
-            <label for="patient_in"> <input name="select" type="radio"> ICU</label>
-            <label for="patient_in"> <input name="select" type="radio"> OPD</label>
-            </div>
-          </div>
-          
+      </div>
+    </div>
+    <div class="items upcomming-appointment">
+      <div>
+        <h3>Upcoming Appointments</h3>
+        <a href="#">View all</a>
+      </div>
+    </div>
+    <div class="items appointment-list">
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
         </div>
-
-
-
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+      <div class="appointment">
+        <div class="profile">
+          <img src="./../Images/user.png" alt="patient">
+        </div>
+        <div>
+          <span>Pritesh</span>
+          <span class="subhead">Motihari, Bihar</span>
+        </div>
+        <div>
+          <span>Appointment With</span>
+          <span class="subhead">Dr. ABC</span>
+        </div>
+        <div>
+          <span>Timing</span>
+          <span class="subhead">11:00</span>
+        </div>
+        <a href="#">Take up</a>
+      </div>
+    </div>
+    <div class="items doctor-list">
+      <div class="doctors">
+        <div><img src="./../Images/doctor.png" alt="doctor"></div>
+        <div class="text">
+          <span>Dr. ABC</span>
+          <span class="subhead">Dept001</span>
+        </div>
+      </div>
+      <div class="doctors">
+        <div><img src="./../Images/doctor.png" alt="doctor"></div>
+        <div class="text">
+          <span>Dr. ABC</span>
+          <span class="subhead">Dept001</span>
+        </div>
+      </div>
+      <div class="doctors">
+        <div><img src="./../Images/doctor.png" alt="doctor"></div>
+        <div class="text">
+          <span>Dr. ABC</span>
+          <span class="subhead">Dept001</span>
+        </div>
       </div>
     </div>
   </div>
-
 </body>
 
 </html>
