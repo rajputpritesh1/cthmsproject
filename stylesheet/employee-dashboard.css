@@ -28,7 +28,7 @@ body {
 
 .sidebar {
   position: fixed;
-  width: 300px;
+  width: 250px;
   height: 100%;
   background: rgba(4, 95, 117, 0.801);
   overflow-x: hidden;
@@ -86,7 +86,7 @@ body {
   position: absolute;
   width: calc(100% - 300px);
   min-height: 100vh;
-  left: 300px;
+  left: 250px;
   background: #f5f5f5;
 }
 
@@ -109,24 +109,10 @@ body {
   position: relative;
   max-width: 400px;
 }
-
-.search input {
-  width: 100%;
-  min-width: 128px;
-  height: 40px;
-  padding: 0 40px;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  background: #f5f5f5;
+.top-bar .search span{
+  font-weight: bolder;
 }
 
-.search i {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  cursor: pointer;
-}
 
 .user {
   position: relative;
@@ -185,6 +171,26 @@ img {
 .icon-box i {
   font-size: 1rem;
   color: #444;
+}
+
+.add-btn{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.add-btn a{
+  text-decoration: none;
+  border: #8b8d8f 2px solid;
+  padding: 0.4rem;
+  border-radius: .3rem;
+  transition: all .5s ease;
+}
+.add-btn a:hover{
+  background: rgba(117, 116, 116, 0.699);
+  color: white;
+  transition: all 300ms ease;
 }
 
 .tables {
@@ -356,28 +362,6 @@ td i {
   }
 }
 
-
-.add-doc{
-  margin-top: 5rem;
-  margin-bottom: .5rem;
-  display: flex;
-  align-items: center;
-  background: rgb(202, 199, 199);
-  width: 10rem;
-  padding: .5rem;
-  justify-content: center;
-  border: 2px solid rgba(4, 95, 117, 0.801);
-  border-radius: .5rem;
-  margin-left: 1rem;
-}
-.add-doc a{
-  text-decoration: none;
-  transition: all 300ms ease;
-}
-.add-doc a:hover{
-  transition: 300ms all ease;
-  letter-spacing: 1px;
-}
 @media (max-width: 420px) {
   .upcoming-appointments,
   .doctor-visiting {

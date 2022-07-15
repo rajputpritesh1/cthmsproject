@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,6 +12,18 @@ body {
 .container {
   position: relative;
   width: 100%;
+}
+
+.active {
+  color: rgb(2, 128, 59);
+}
+
+.pending {
+  color: #ffd900;
+}
+
+.rejected {
+  color: red;
 }
 
 .sidebar {
@@ -27,17 +39,17 @@ body {
 .sidebar ul li {
   width: 100%;
   list-style: none;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar ul li:hover {
   background: #444;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
+
 .sidebar ul li a.active {
   background: #444;
 }
-
 
 .sidebar ul li:first-child {
   line-height: 60px;
@@ -117,58 +129,57 @@ img {
   object-fit: cover;
 }
 
+/* card */
 .cards {
-  margin-top: 60px;
+  padding: 1rem 1rem;
+  grid-gap: 20rem;
+  justify-content: end;
+  display: flex;
   width: 100%;
-  padding: 35px 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
 }
 
 .cards .card {
   background: white;
-  padding: 20px;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
-  transition: all .4s ease;
-}
-.cards .card:hover{
-  transition: all .4s ease;
-  transform: scale(1.05);
+  transition: all 0.4s ease;
+  width: 8rem;
 }
 
-.number {
-  font-size: 35px;
-  font-weight: 500;
-  color: rgb(2, 2, 2);
+.cards .card:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.05);
 }
 
 .card-name {
   color: #444;
   font-weight: 600;
 }
-.card-name a{
+
+.card-name a {
   text-decoration: none;
   color: #444;
 }
 
 .icon-box i {
-  font-size: 45px;
+  font-size: 1rem;
   color: #444;
 }
 
 .tables {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   align-items: self-start;
   padding: 0 20px 20px 20px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .img-box-small {
@@ -177,6 +188,10 @@ img {
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.appoinments {
+  overflow: scroll;
 }
 
 .upcoming-appointments,
@@ -193,21 +208,28 @@ img {
   justify-content: space-between;
   color: #444;
 }
-
-.btn {
-  padding: 5px 10px;
-  border: 2px solid ;
-  border-radius: 0.3rem;
-  color: rgb(0, 102, 161);
+.add-btn{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.add-btn a{
   text-decoration: none;
-  text-align: center;
-  transition: all .4s ease;
+  border: #8b8d8f 2px solid;
+  padding: 0.4rem;
+  border-radius: .3rem;
+  transition: all .5s ease;
+}
+.add-btn a:hover{
+  background: rgba(117, 116, 116, 0.699);
+  color: white;
+  transition: all 300ms ease;
 }
 
-.btn:hover{
-  transition: all .4s ease;
-  background: rgba(137, 182, 209, 0.26);
-}
+
+
 table {
   margin-top: 10px;
   width: 100%;
@@ -222,8 +244,6 @@ thead td {
 table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
 
 table tbody tr:last-child {
   border-bottom: none;
@@ -243,11 +263,6 @@ td i {
   white-space: nowrap;
 }
 
-.fa-handshake {
-  background: #32bea6;
-  cursor: pointer;
-}
-
 .fa-edit {
   background: #63b4f4;
   cursor: pointer;
@@ -260,7 +275,7 @@ td i {
 
 /* Scrollbar */
 .sidebar::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.5rem;
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -272,84 +287,100 @@ td i {
   background-color: #70d4aa;
   border-radius: 10rem;
 }
-/* appointments */
-.sidebar::-webkit-scrollbar {
-  width: .5rem;
+
+/* employee */
+.tables::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-.sidebar::-webkit-scrollbar-track {
+.tables::-webkit-scrollbar-track {
   background-color: #e4e4e4;
   border-radius: 10rem;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #70d4aa;
-  border-radius: 10rem;
-}
-/* doctor */
-.sidebar::-webkit-scrollbar {
-  width: .5rem;
-}
-
-.sidebar::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
-  border-radius: 10rem;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #70d4aa;
+.tables::-webkit-scrollbar-thumb {
+  background-color: #09a5b9;
   border-radius: 10rem;
 }
 
 /*  Responsive */
 
-@media(max-width:1090px) {
+@media (max-width: 1090px) {
   .sidebar {
-      width: 60px;
+    width: 60px;
   }
+
   .main {
-      width: calc(100% - 60px);
-      left: 60px;
+    width: calc(100% - 60px);
+    left: 60px;
   }
+
   .top-bar {
-      width: calc(100% - 60px);
+    width: calc(100% - 60px);
   }
 }
 
-@media(max-width:860px) {
-  .cards {
-      grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 860px) {
   .tables {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    overflow: scroll;
   }
-}
 
-@media(max-width:530px) {
   .cards {
-      grid-template-columns: 1fr;
+    justify-content: center;
+    margin-left: 10rem;
   }
-  .upcoming-appointments td:nth-child(3) {
-      display: none;
+}
+@media (max-width: 760px) {
+  .tables {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+  .card{
+    justify-content: center;
   }
 }
 
-@media(max-width:420px) {
+@media (max-width: 530px) {
+  .upcoming-appointments td:nth-child(3) {
+    display: none;
+  }
+
+  .appoinments {
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: start;
+    margin-left: 0rem;
+  }
+}
+
+
+
+@media (max-width: 420px) {
   .upcoming-appointments,
   .doctor-visiting {
-      font-size: 70%;
-      padding: 10px;
-      min-height: 200px;
+    font-size: 70%;
+    padding: 10px;
+    min-height: 200px;
   }
-  .cards,
+
   .tables {
-      padding: 10px;
+    padding: 10px;
   }
+
   .search input {
-      padding: 0 10px;
+    padding: 0 10px;
   }
+
   .user {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
