@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,6 +12,18 @@ body {
 .container {
   position: relative;
   width: 100%;
+}
+
+.active {
+  color: rgb(2, 128, 59);
+}
+
+.pending {
+  color: #ffd900;
+}
+
+.rejected {
+  color: red;
 }
 
 .sidebar {
@@ -27,17 +39,17 @@ body {
 .sidebar ul li {
   width: 100%;
   list-style: none;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar ul li:hover {
   background: #444;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
+
 .sidebar ul li a.active {
   background: #444;
 }
-
 
 .sidebar ul li:first-child {
   line-height: 60px;
@@ -133,26 +145,30 @@ img {
 
 /* card */
 .cards {
-  margin-top: 1rem;
-  padding: 1.5rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, .1fr);
+  margin-top: 2rem;
+  padding: 1rem 1rem;
   grid-gap: 20rem;
+  justify-content: end;
+  display: flex;
+  width: 100%;
 }
 
 .cards .card {
   background: white;
-  padding: 20px;
+  padding: 0.3rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
+  margin: 2rem;
+  width: 10rem;
 }
-.cards .card:hover{
-  transition: all .4s ease;
+
+.cards .card:hover {
+  transition: all 0.4s ease;
   transform: scale(1.05);
 }
 
@@ -160,12 +176,14 @@ img {
   color: #444;
   font-weight: 600;
 }
-.card-name a{
+
+.card-name a {
   text-decoration: none;
   color: #444;
 }
+
 .icon-box i {
-  font-size: 45px;
+  font-size: 1rem;
   color: #444;
 }
 
@@ -187,9 +205,11 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-.appoinments{
+
+.appoinments {
   overflow: scroll;
 }
+
 .upcoming-appointments,
 .doctor-visiting {
   min-height: 350px;
@@ -216,12 +236,9 @@ thead td {
   color: #333;
 }
 
-
 table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
 
 table tbody tr:last-child {
   border-bottom: none;
@@ -240,6 +257,7 @@ td i {
 .upcoming-appointments table tbody td:last-child {
   white-space: nowrap;
 }
+
 .fa-edit {
   background: #63b4f4;
   cursor: pointer;
@@ -252,7 +270,7 @@ td i {
 
 /* Scrollbar */
 .sidebar::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.5rem;
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -264,9 +282,10 @@ td i {
   background-color: #70d4aa;
   border-radius: 10rem;
 }
+
 /* employee */
 .tables::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.5rem;
 }
 
 .tables::-webkit-scrollbar-track {
@@ -279,61 +298,82 @@ td i {
   border-radius: 10rem;
 }
 
-
 /*  Responsive */
 
-@media(max-width:1090px) {
+@media (max-width: 1090px) {
   .sidebar {
-      width: 60px;
+    width: 60px;
   }
+
   .main {
-      width: calc(100% - 60px);
-      left: 60px;
+    width: calc(100% - 60px);
+    left: 60px;
   }
+
   .top-bar {
-      width: calc(100% - 60px);
+    width: calc(100% - 60px);
   }
 }
 
-@media(max-width:860px) {
-  .cards {
-      grid-template-columns: repeat(2, .1fr);
-      grid-gap: 3rem;
-  }
+@media (max-width: 860px) {
   .tables {
-      grid-template-columns: 1fr;
-      overflow: scroll;
-  }
-}
-
-@media(max-width:530px) {
-  .cards {
-      grid-template-columns: repeat(1, .6fr);
-      grid-gap: 3rem;
-  }
-  .upcoming-appointments td:nth-child(3) {
-      display: none;
-  }
-  .appoinments{
+    grid-template-columns: 1fr;
     overflow: scroll;
   }
+
+  .cards {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 760px) {
+  .tables {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+  .card{
+    justify-content: center;
+  }
 }
 
-@media(max-width:420px) {
+@media (max-width: 530px) {
+  .upcoming-appointments td:nth-child(3) {
+    display: none;
+  }
+
+  .appoinments {
+    overflow: scroll;
+  }
+
+  .cards {
+    justify-content: start;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 420px) {
   .upcoming-appointments,
   .doctor-visiting {
-      font-size: 70%;
-      padding: 10px;
-      min-height: 200px;
+    font-size: 70%;
+    padding: 10px;
+    min-height: 200px;
   }
+
   .tables {
-      padding: 10px;
+    padding: 10px;
   }
+
   .search input {
-      padding: 0 10px;
+    padding: 0 10px;
   }
+
   .user {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
