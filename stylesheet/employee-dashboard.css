@@ -131,13 +131,13 @@ img {
   object-fit: cover;
 }
 
+/* card */
 .cards {
-  margin-top: 60px;
-  width: 100%;
-  padding: 35px 20px;
+  margin-top: 1rem;
+  padding: 1.5rem 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, .1fr);
+  grid-gap: 20rem;
 }
 
 .cards .card {
@@ -145,7 +145,7 @@ img {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   border-radius: .3rem;
   cursor: pointer;
@@ -156,17 +156,14 @@ img {
   transform: scale(1.05);
 }
 
-.number {
-  font-size: 35px;
-  font-weight: 500;
-  color: rgb(2, 2, 2);
-}
-
 .card-name {
   color: #444;
   font-weight: 600;
 }
-
+.card-name a{
+  text-decoration: none;
+  color: #444;
+}
 .icon-box i {
   font-size: 45px;
   color: #444;
@@ -175,10 +172,12 @@ img {
 .tables {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   align-items: self-start;
   padding: 0 20px 20px 20px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .img-box-small {
@@ -188,7 +187,9 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-
+.appoinments{
+  overflow: scroll;
+}
 .upcoming-appointments,
 .doctor-visiting {
   min-height: 350px;
@@ -204,20 +205,6 @@ img {
   color: #444;
 }
 
-.btn {
-  padding: 5px 10px;
-  border: 2px solid ;
-  border-radius: 0.3rem;
-  color: rgb(0, 102, 161);
-  text-decoration: none;
-  text-align: center;
-  transition: all .4s ease;
-}
-
-.btn:hover{
-  transition: all .4s ease;
-  background: rgba(137, 182, 209, 0.26);
-}
 table {
   margin-top: 10px;
   width: 100%;
@@ -228,6 +215,7 @@ thead td {
   font-weight: 600;
   color: #333;
 }
+
 
 table tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -252,12 +240,6 @@ td i {
 .upcoming-appointments table tbody td:last-child {
   white-space: nowrap;
 }
-
-.fa-handshake {
-  background: #32bea6;
-  cursor: pointer;
-}
-
 .fa-edit {
   background: #63b4f4;
   cursor: pointer;
@@ -282,34 +264,21 @@ td i {
   background-color: #70d4aa;
   border-radius: 10rem;
 }
-/* appointments */
-.sidebar::-webkit-scrollbar {
+/* employee */
+.tables::-webkit-scrollbar {
   width: .5rem;
 }
 
-.sidebar::-webkit-scrollbar-track {
+.tables::-webkit-scrollbar-track {
   background-color: #e4e4e4;
   border-radius: 10rem;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #70d4aa;
-  border-radius: 10rem;
-}
-/* doctor */
-.sidebar::-webkit-scrollbar {
-  width: .5rem;
-}
-
-.sidebar::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
+.tables::-webkit-scrollbar-thumb {
+  background-color: #09a5b9;
   border-radius: 10rem;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #70d4aa;
-  border-radius: 10rem;
-}
 
 /*  Responsive */
 
@@ -328,19 +297,25 @@ td i {
 
 @media(max-width:860px) {
   .cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, .1fr);
+      grid-gap: 3rem;
   }
   .tables {
       grid-template-columns: 1fr;
+      overflow: scroll;
   }
 }
 
 @media(max-width:530px) {
   .cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1, .6fr);
+      grid-gap: 3rem;
   }
   .upcoming-appointments td:nth-child(3) {
       display: none;
+  }
+  .appoinments{
+    overflow: scroll;
   }
 }
 
@@ -351,7 +326,6 @@ td i {
       padding: 10px;
       min-height: 200px;
   }
-  .cards,
   .tables {
       padding: 10px;
   }
