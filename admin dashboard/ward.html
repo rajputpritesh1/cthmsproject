@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../stylesheet/employee-dashboard.css">
+  <link rel="stylesheet" href="./../stylesheet/ward-dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Admin Dashboard | Employee</title>
+  <title>Admin Dashboard | Ward</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/employees.html" class="active">
+          <a href="./../admin dashboard/employees.html" >
             <i class="fa-solid fa-hospital-user"></i>
             <div class="title">Employee</div>
           </a>
@@ -58,7 +58,7 @@
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/ward.html">
+          <a href="./../admin dashboard/ward.html" class="active">
             <i class="fa-solid fa-bed-pulse"></i></i>
             <div class="title">Ward</div>
           </a>
@@ -80,7 +80,7 @@
     <div class="main">
       <div class="top-bar">
         <div class="search">
-          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee</span>
+          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Ward</span>
         </div>
         <i class="fas fa-bell"></i>
         <div class="user">
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="add-btn">
-          <a href="./../forms/add-employee.html"><i class="fa-solid fa-circle-plus"></i> Add Employee</a>
+          <a href="#"><i class="fa-solid fa-circle-plus"></i> Add Ward</a>
       </div> 
       <div class="tables">
         <div class="upcoming-appointments">
@@ -96,12 +96,12 @@
             <thead>
               <td>Sr.No.</td>
               <td>Name</td>
-              <td>Employee ID</td>
+              <td>Patient ID</td>
               <td>Email</td>
               <td>Mobile</td>
               <td>Join Date</td>
-              <td>Role</td>
-              <td>Status</td>
+              <td>Room No.</td>
+              <td>Ward</td>
               <td>Action</td>
             </thead>
             <tbody>
@@ -112,8 +112,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="active">Active</td>
+                <td>102</td>
+                <td class="active">Born Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -126,8 +126,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="active">Active</td>
+                <td>104</td>
+                <td class="active">Special Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -140,8 +140,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="pending">Pending</td>
+                <td>112</td>
+                <td class="pending">Genral Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -154,7 +154,7 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
+                <td>106</td>
                 <td class="active">Active</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
@@ -168,8 +168,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="rejected">Rejected</td>
+                <td>108</td>
+                <td class="rejected">CCU</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -182,8 +182,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="active">Active</td>
+                <td>112</td>
+                <td class="active">Burn Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -196,8 +196,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="active">Active</td>
+                <td>100</td>
+                <td class="pending">Genral ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -210,8 +210,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Admin</td>
-                <td class="pending">Pending</td>
+                <td>122</td>
+                <td class="pending">Genral Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -224,8 +224,8 @@
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
                 <td>15-07-022</td>
-                <td>Doctor</td>
-                <td class="active">Active</td>
+                <td>109</td>
+                <td class="active">Special Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
