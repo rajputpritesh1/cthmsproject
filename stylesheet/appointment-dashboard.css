@@ -209,11 +209,9 @@ img {
   color: #444;
 }
 .add-btn{
-  margin: 5rem 0;
+  margin: 5rem 2rem;
   display: flex;
-  justify-content: end;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+  justify-content: space-between;
 }
 .add-btn a{
   text-decoration: none;

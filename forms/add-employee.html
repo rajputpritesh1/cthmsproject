@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../stylesheet/add-employee.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Admin Dashboard | Profile</title>
+  <title>Admin Dashboard | Add Employee</title>
 </head>
 
 <body>
@@ -25,9 +25,9 @@
             <i class="fa-solid fa-house-medical"></i>
             <div class="title">Dashboard</div>
           </a>
-        </li>
+        </li> 
         <li>
-          <a href="./../admin dashboard/employees.html">
+          <a href="./../admin dashboard/employees.html" class="active">
             <i class="fa-solid fa-hospital-user"></i>
             <div class="title">Employee</div>
           </a>
@@ -64,7 +64,7 @@
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/profile.html" class="active">
+          <a href="./../admin dashboard/profile.html" >
             <i class="fa-solid fa-user"></i>
             <div class="title">Profile</div>
           </a>
@@ -80,7 +80,7 @@
     <div class="main">
       <div class="top-bar">
         <div class="search">
-          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Profile</span>
+          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee <i class="fa-solid fa-caret-right"></i> Add Employee</span>
         </div>
         <i class="fas fa-bell"></i>
         <div class="user">
@@ -89,7 +89,43 @@
       </div>
       <div class="tables">
         <div class="upcoming-appointments profile-container">
-          <div class="profile">
+          <div class="profile"> 
+            <div class="add-employee">
+              <h3>Add Employee Details</h3>
+              <hr>
+            </div>
+            <div class="persontal-details">
+              <label for="name">Name
+                <input type="text" required placeholder="Pritesh Bhardwaj">
+              </label>
+              <label for="contact">Contact
+                <input type="number" placeholder="8544685939">
+              </label>
+              <label for="email">Email
+                <input type="email" required  placeholder="Demo@gmail.com">
+              </label>
+              <label for="gender">Gender
+                <label for="male">Male
+                  <input type="radio" required name="gender">
+                </label>
+                <label for="female">Female
+                  <input type="radio" required name="gender">
+                </label>
+              </label>
+              <label for="adhar">Adhar
+                <input type="number" required placeholder="1111 2222 3333">
+              </label>
+              <label for="username">Username
+                <input type="text" required placeholder="admin123">
+              </label>
+              <label for="password">Password
+                <input type="password" required placeholder="admin@123">
+              </label>
+              <div class="submit">
+                <a href="./../admin dashboard/employees.html">Submit</a>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
