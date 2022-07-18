@@ -129,11 +129,12 @@ label{
 }
 
 input, select{
-  color: #fff;
+  color: rgb(0, 0, 0);
   outline: none;
   border: none;
   padding: 8px;
-  background: rgba(26, 134, 223, 0.733);
+  background: rgba(255, 255, 255, 0.733);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 5px;
 }
 
@@ -195,7 +196,7 @@ input, select{
   label{
     padding: 5px;
   }
-}
+} 
 
 @media (max-width: 530px) {
   .form-container{
