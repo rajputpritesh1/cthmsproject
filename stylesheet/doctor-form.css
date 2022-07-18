@@ -128,7 +128,7 @@ label{
   padding: 10px;
 }
 
-input{
+input, select{
   color: #fff;
   outline: none;
   border: none;
@@ -153,10 +153,6 @@ input{
 .submit-btn a:hover{
   background: rgba(26, 134, 223, 0.733);
 }
-
-
-
-
 /* Scrollbar */
 .sidebar::-webkit-scrollbar {
   width: 0.5rem;

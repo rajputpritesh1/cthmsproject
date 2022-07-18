@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../stylesheet/employee-form.css">
+  <link rel="stylesheet" href="./../stylesheet/patient-form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Admin Dashboard | Employee</title>
+  <title>Admin Dashboard | Patient </title>
 </head>
 
 <body>
@@ -27,20 +27,20 @@
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/employees.html" class="active">
+          <a href="./../admin dashboard/employees.html" >
             <i class="fa-solid fa-hospital-user"></i>
             <div class="title">Employee</div>
           </a>
         </li>
 
         <li>
-          <a href="./../admin dashboard/doctors.html">
+          <a href="./../admin dashboard/doctors.html" >
             <i class="fa-solid fa-user-doctor"></i>
             <div class="title">Doctors</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/patients.html">
+          <a href="./../admin dashboard/patients.html" class="active">
             <i class="fa-solid fa-bed-pulse"></i>
             <div class="title">Patient</div>
           </a>
@@ -80,7 +80,7 @@
     <div class="main">
       <div class="top-bar">
         <div class="search">
-          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee <i class="fa-solid fa-caret-right"></i> Add Employee</span>
+          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee <i class="fa-solid fa-caret-right"></i> Add Patient</span>
         </div>
         <i class="fas fa-bell"></i>
         <div class="user">
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div class="form-container">
-        <h2>Add Employee</h2>
+        <h2>Add Patient</h2>
         <div class="form">
           <div>
             <label>Full Name:
@@ -96,23 +96,13 @@
             </label>
           </div>
           <div>
-            <label> Email ID:
+            <label>Patient ID.
               <input type="email" required>
             </label>
           </div>
           <div>
-            <label>Password
-              <input type="password" required>
-            </label>
-          </div>
-          <div>
-            <label>Confirm Password
-              <input type="password" required>
-            </label>
-          </div>
-          <div>
-            <label>Adhar No.
-              <input type="number" required>
+            <label>Email ID
+              <input type="email" required>
             </label>
           </div>
           <div>
@@ -121,35 +111,37 @@
             </label>
           </div>
           <div>
-            <label >Avtar
-              <input type="file">
+            <label>Doctor
+              <select>
+                <option value="doc1">Select Doctor</option>
+                <option value="doc2">Doctor1</option>
+                <option value="doc3">Doctor2</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label>Gender
+              <select>
+                <option value="doc1">Select Your Gender</option>
+                <option value="doc2">Male</option>
+                <option value="doc3">Female</option>
+                <option value="doc3">Others</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label >Date of Birth
+              <input type="date">
             </label>
           </div>
           <div class="place">
-            <label>Country
+            <label>Address
               <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>City
-              <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>State
-              <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>Pin Code
-              <input type="number">
             </label>
           </div><br>
-
           <div class="submit-btn">
             <a href="#">Submit</a>
           </div>
-
         </div>
       </div>
     </div>

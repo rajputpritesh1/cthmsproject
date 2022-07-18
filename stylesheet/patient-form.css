@@ -128,7 +128,7 @@ label{
   padding: 10px;
 }
 
-input{
+input, select{
   color: #fff;
   outline: none;
   border: none;
@@ -140,9 +140,10 @@ input{
 .submit-btn{
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: center;
 }
+
 .submit-btn a{
   background: #444;
   padding: 10px;
@@ -153,10 +154,6 @@ input{
 .submit-btn a:hover{
   background: rgba(26, 134, 223, 0.733);
 }
-
-
-
-
 /* Scrollbar */
 .sidebar::-webkit-scrollbar {
   width: 0.5rem;
