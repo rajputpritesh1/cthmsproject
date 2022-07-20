@@ -381,4 +381,8 @@ td i {
     width: 40px;
     height: 40px;
   }
+  .add-btn{
+    flex-direction: column;
+    text-align: center;
+  }
 }
