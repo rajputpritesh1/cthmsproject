@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../stylesheet/doctor-form.css">
+  <link rel="stylesheet" href="./../stylesheet/report-form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Admin Dashboard | Doctors </title>
+  <title>Admin Dashboard | Reports </title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
         </li>
 
         <li>
-          <a href="./../admin dashboard/doctors.html" class="active">
+          <a href="./../admin dashboard/doctors.html" >
             <i class="fa-solid fa-user-doctor"></i>
             <div class="title">Doctors</div>
           </a>
@@ -46,13 +46,13 @@
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/appointment.html">
+          <a href="./../admin dashboard/appointment.html" >
             <i class="fa-solid fa-calendar-check"></i>
             <div class="title">Appointments</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/reports.html">
+          <a href="./../admin dashboard/reports.html" class="active">
             <i class="fa-solid fa-notes-medical"></i>
             <div class="title">Reports</div>
           </a>
@@ -80,7 +80,7 @@
     <div class="main">
       <div class="top-bar">
         <div class="search">
-          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee <i class="fa-solid fa-caret-right"></i> Add Doctor</span>
+          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Employee <i class="fa-solid fa-caret-right"></i> Add Report</span>
         </div>
         <i class="fas fa-bell"></i>
         <div class="user">
@@ -88,78 +88,19 @@
         </div>
       </div>
       <div class="form-container">
-        <h2>Add Doctor</h2>
+        <h2>Add Report</h2>
         <div class="form">
           <div>
-            <label>Full Name:
+            <label>Appointment ID.
               <input type="text" required>
             </label>
           </div>
+          
           <div>
-            <label>License No.
-              <input type="text" required>
+            <label>Upload Report
+              <input type="file" required>
             </label>
           </div>
-          <div>
-            <label>Email ID
-              <input type="email" required>
-            </label>
-          </div>
-          <div>
-            <label>Password
-              <input type="password" required>
-            </label>
-          </div>
-          <div>
-            <label>Confirm Password
-              <input type="password" required>
-            </label>
-          </div>
-          <div>
-            <label>Adhar No.
-              <input type="number" required>
-            </label>
-          </div>
-          <div>
-            <label>Phone No.
-              <input type="number" required>
-            </label>
-          </div>
-          <div>
-            <label>Specialization
-              <select>
-                <option value="dental">Dental</option>
-                <option value="mental">Mental</option>
-                <option value="mental">Mental</option>
-              </select>
-            </label>
-          </div>
-          <div>
-            <label >Avtar
-              <input type="file">
-            </label>
-          </div>
-          <div class="place">
-            <label>Country
-              <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>City
-              <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>State
-              <input type="text">
-            </label>
-          </div>
-          <div>
-            <label>Pin Code
-              <input type="number">
-            </label>
-          </div> <br>
-
           <div class="submit-btn">
             <a href="#">Submit</a>
            </div>
