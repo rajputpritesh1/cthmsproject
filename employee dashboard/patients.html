@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../stylesheet/ward-dashboard.css">
+  <link rel="stylesheet" href="./../stylesheet/patient-dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>Admin Dashboard | Ward</title>
+  <title>Employee Dashboard | Patient </title>
 </head>
 
 <body>
@@ -15,56 +15,50 @@
     <div class="sidebar">
       <ul>
         <li>
-          <a href="./../admin dashboard/admin_dashboard.html">
+          <a href="./../employee dashboard/employee_dashboard.html">
             <i class="fas fa-clinic-medical"></i>
             <div class="title">CT Hospital</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/admin_dashboard.html">
+          <a href="./../employee dashboard/employee_dashboard.html">
             <i class="fa-solid fa-house-medical"></i>
             <div class="title">Dashboard</div>
           </a>
         </li>
-        <li>
-          <a href="./../admin dashboard/employees.html" >
-            <i class="fa-solid fa-hospital-user"></i>
-            <div class="title">Employee</div>
-          </a>
-        </li>
         
         <li>
-          <a href="./../admin dashboard/doctors.html">
+          <a href="./../employee dashboard/doctors.html" >
             <i class="fa-solid fa-user-doctor"></i>
             <div class="title">Doctors</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/patients.html">
+          <a href="./../employee dashboard/patients.html" class="active">
             <i class="fa-solid fa-bed-pulse"></i>
             <div class="title">Patient</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/appointment.html">
+          <a href="./../employee dashboard/appointments.html">
             <i class="fa-solid fa-calendar-check"></i>
             <div class="title">Appointments</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/reports.html">
+          <a href="./../employee dashboard/reports.html">
             <i class="fa-solid fa-notes-medical"></i>
             <div class="title">Reports</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/ward.html" class="active">
+          <a href="./../employee dashboard/wards.html">
             <i class="fa-solid fa-bed-pulse"></i></i>
             <div class="title">Ward</div>
           </a>
         </li>
         <li>
-          <a href="./../admin dashboard/profile.html">
+          <a href="./../employee dashboard/profile.html">
             <i class="fa-solid fa-user"></i>
             <div class="title">Profile</div>
           </a>
@@ -75,46 +69,40 @@
             <div class="title">Logout</div>
           </a>
         </li>
-      </ul> 
+      </ul>
     </div>
     <div class="main">
       <div class="top-bar">
         <div class="search">
-          <span class="position">Admin Dashboard <i class="fa-solid fa-caret-right"></i> Ward</span>
-        </div>
+          <span class="position">Employee Dashboard <i class="fa-solid fa-caret-right"></i> Patient</span>
+        </div> 
         <i class="fas fa-bell"></i>
         <div class="user">
-          <a href="./../admin dashboard/profile.html"><img src="./../Images/user.png" alt="profile-image"></a>
+          <a href="./../employee dashboard/profile.html"><img src="./../Images/user.png" alt="profile-image"></a>
         </div>
       </div>
       <div class="add-btn">
-        <h1>Ward List</h1>
-          <a href="./../forms/add-ward.html"><i class="fa-solid fa-circle-plus"></i> Add Ward</a>
-      </div> 
+        <h1>Patients List</h1>
+        <a href="./../forms_employee_dashboard/add-patient.html"><i class="fa-solid fa-circle-plus"></i> Add Patient</a>
+    </div> 
       <div class="tables">
         <div class="upcoming-appointments">
           <table class="appointments">
             <thead>
               <td>Sr.No.</td>
               <td>Name</td>
-              <td>Patient ID</td>
+              <td>Age</td>
               <td>Email</td>
               <td>Mobile</td>
-              <td>Join Date</td>
-              <td>Room No.</td>
-              <td>Ward</td>
               <td>Action</td>
             </thead>
             <tbody>
               <tr>
                 <td>01</td>
-                <td>Liam Smith Doe</td>
-                <td>apl0001</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>102</td>
-                <td class="active">Born Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -122,13 +110,10 @@
               </tr>
               <tr>
                 <td>02</td>
-                <td>Emma</td>
-                <td>apl0002</td>
+                <td>Minarul Hoque</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>104</td>
-                <td class="active">Special Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -136,13 +121,10 @@
               </tr>
               <tr>
                 <td>03</td>
-                <td>Olivia Smith </td>
-                <td>apl0003</td>
+                <td>Arpan Mondal</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>112</td>
-                <td class="pending">Genral Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -150,13 +132,10 @@
               </tr>
               <tr>
                 <td>04</td>
-                <td>Isabella Doe</td>
-                <td>apl0004</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>106</td>
-                <td class="active">Active</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -164,13 +143,10 @@
               </tr>
               <tr>
                 <td>05</td>
-                <td>Sophia Smith </td>
-                <td>apl0005</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>108</td>
-                <td class="rejected">CCU</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -178,13 +154,10 @@
               </tr>
               <tr>
                 <td>06</td>
-                <td>Liam Smith Doe</td>
-                <td>apl0006</td>
+                <td>Minarul Hoque</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>112</td>
-                <td class="active">Burn Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -192,13 +165,10 @@
               </tr>
               <tr>
                 <td>07</td>
-                <td>Liam Smith Doe</td>
-                <td>apl0007</td>
+                <td>Arpan Mondal</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>100</td>
-                <td class="pending">Genral ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -206,13 +176,10 @@
               </tr>
               <tr>
                 <td>08</td>
-                <td>Liam Smith Doe</td>
-                <td>apl0008</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>122</td>
-                <td class="pending">Genral Ward</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
@@ -220,13 +187,43 @@
               </tr>
               <tr>
                 <td>09</td>
-                <td>Liam Smith Doe</td>
-                <td>apl0009</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
                 <td>demo@gmail.com</td>
                 <td>8544685939</td>
-                <td>15-07-022</td>
-                <td>109</td>
-                <td class="active">Special Ward</td>
+                <td>
+                  <i class="fas fa-edit" title="Edit"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Minarul Hoque</td>
+                <td>18</td>
+                <td>demo@gmail.com</td>
+                <td>8544685939</td>
+                <td>
+                  <i class="fas fa-edit" title="Edit"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Arpan Mondal</td>
+                <td>18</td>
+                <td>demo@gmail.com</td>
+                <td>8544685939</td>
+                <td>
+                  <i class="fas fa-edit" title="Edit"></i>
+                  <i class="far fa-trash-alt" title="Delete"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Pritesh Bhardwaj</td>
+                <td>18</td>
+                <td>demo@gmail.com</td>
+                <td>8544685939</td>
                 <td>
                   <i class="fas fa-edit" title="Edit"></i>
                   <i class="far fa-trash-alt" title="Delete"></i>
