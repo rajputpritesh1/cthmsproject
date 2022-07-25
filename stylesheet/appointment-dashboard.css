@@ -360,7 +360,7 @@ td i {
 }
 
 
-
+/* Responsive */
 @media (max-width: 420px) {
   .upcoming-appointments,
   .doctor-visiting {
