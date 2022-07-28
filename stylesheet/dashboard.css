@@ -108,13 +108,11 @@ body {
   height: 50px;
 }
 
-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+.user img{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(2, 128, 59);
+  border-radius: 10rem;
 }
 
 .cards {
@@ -257,17 +255,6 @@ td i {
   background: #ed5564;
   cursor: pointer;
 }
-
-/* preloader */
-#loader{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 9999999999;
-  overflow: visible;
-  background: #fff url(./../Images/loader.gif) no-repeat center center;
-}
-
 
 
 /* Scrollbar */
