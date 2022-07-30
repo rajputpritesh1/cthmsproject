@@ -96,17 +96,16 @@ body {
   position: relative;
   max-width: 400px;
 }
-.top-bar .search span{
+.top-bar .search span {
   font-weight: bolder;
 }
-
 
 .user {
   position: relative;
   width: 50px;
   height: 50px;
 }
-.user img{
+.user img {
   width: 50px;
   height: 50px;
   border: 2px solid rgb(2, 128, 59);
@@ -114,21 +113,22 @@ body {
 }
 
 /* add form */
-.form-container{
+.form-container {
   background: #e4e4e4;
-  margin: 100px;
-  padding: 50px;
+  margin: 75px;
+  padding: 15px;
   border-radius: 15px;
 }
 
-.form{
+.form {
   gap: 20px;
-  padding: 40px;
+  /* padding: 40px; */
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-label{
+label {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -144,20 +144,21 @@ input, select{
   border-radius: 5px;
 }
 
-.submit-btn{
+.submit-btn {
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
   margin-top: 15px;
   text-align: center;
 }
-.submit-btn a{
+.submit-btn .submit {
   background: #444;
   padding: 10px;
   text-decoration: none;
   color: #fff;
   border-radius: 50px;
+  cursor: pointer;
 }
-.submit-btn a:hover{
+.submit-btn .submit:hover {
   background: rgba(26, 134, 223, 0.733);
 }
 
@@ -196,30 +197,17 @@ input, select{
 }
 
 @media (max-width: 860px) {
-  
 }
 @media (max-width: 760px) {
-  .form{
+  .form {
     padding: 10px;
   }
-  label{
+  label {
     padding: 5px;
   }
 }
 
-@media (max-width: 530px) {
-  .form-container{
-    margin: 25px 0;
-  }
-  .form{
-    gap: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 180px);
-  } 
-}
-
 @media (max-width: 420px) {
-
   .search input {
     padding: 0 10px;
   }
@@ -228,7 +216,7 @@ input, select{
     width: 40px;
     height: 40px;
   }
-  .form-container{
+  .form-container {
     background: none;
   }
 }

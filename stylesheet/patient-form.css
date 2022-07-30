@@ -114,21 +114,22 @@ body {
 }
 
 /* add form */
-.form-container{
+.form-container {
   background: #e4e4e4;
-  margin: 100px;
-  padding: 50px;
+  margin: 75px;
+  padding: 15px;
   border-radius: 15px;
 }
 
-.form{
+.form {
   gap: 20px;
-  padding: 40px;
+  /* padding: 40px; */
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-label{
+label {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -144,21 +145,21 @@ input, select{
   border-radius: 5px;
 }
 
-.submit-btn{
+.submit-btn {
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
 }
-
-.submit-btn a{
+.submit-btn .submit {
   background: #444;
   padding: 10px;
   text-decoration: none;
   color: #fff;
   border-radius: 50px;
+  cursor: pointer;
 }
-.submit-btn a:hover{
+.submit-btn .submit:hover {
   background: rgba(26, 134, 223, 0.733);
 }
 
@@ -206,16 +207,7 @@ input, select{
   }
 }
 
-@media (max-width: 530px) {
-  .form-container{
-    margin: 25px 0;
-  }
-  .form{
-    gap: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 180px);
-  }
-}
+
 
 @media (max-width: 420px) {
 
